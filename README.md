@@ -1,60 +1,35 @@
-# DSCI 510 Final Project  
-**Movie Rating Authenticity Analysis**
+# Sample Project Movie Rating Authenticity Analysis
+This project studies the relationship between movie review sentiment and movie rating reliability across platforms such as IMDb, TMDb, and Reddit.
 
-## Project Overview
-This project studies the relationship between movie review sentiment and rating reliability across multiple platforms, including IMDb, TMDb, and Reddit.
+# Data sources
+| Source | Type | Fields | Current Status |
+|---|---|---|---|
+| TMDb API | API | title, vote_average, release_date | Completed |
+| IMDb | Dataset / API (planned) | rating, movie metadata, reviews | Planned |
+| Reddit | API (planned) | user comments, upvotes, timestamps | Planned |
 
-The goal is to evaluate whether official movie ratings are consistent with audience sentiment and identify factors that may affect rating reliability.
+# Results
+No final analysis results yet.
 
-## Current Progress
-At the current stage, TMDb API integration has been completed.
+At the current stage, the project has successfully connected to the TMDb API and retrieved 20 movie records in one request. This confirms that the data collection pipeline works correctly.
 
-The project is now able to successfully collect movie data from TMDb, including:
-- movie title
-- vote average
-- release date
-- genre information
+# Installation
+- Create a `.env` file in the project root and add:
+  `TMDB_API_KEY=your_api_key`
+- Install required Python packages:
+  `pip install -r requirements.txt`
 
-## Files
-- `src/tmdb_api.py`  
-  Python script for TMDb API data collection
+Required packages currently used:
+- requests
+- python-dotenv
 
-- `tests.py`  
-  Test file to verify API access and output sample data
+# Running analysis
+From the project root directory, run:
 
-- `requirements.txt`  
-  Required Python packages
+`python3 tests.py`
 
-## How to Run
-Install required packages:
+You can also run:
 
-```bash
-pip install -r requirements.txt
-```
+`python3 src/tmdb_api.py`
 
-Run the TMDb API script:
-
-```bash
-python3 src/tmdb_api.py
-```
-
-Run test file:
-
-```bash
-python3 tests.py
-```
-
-## Current Output Example
-```python
-{
-    "title": "Avatar: Fire and Ash",
-    "vote_average": 7.4,
-    "release_date": "2025-12-17"
-}
-```
-
-## Next Steps
-- integrate IMDb dataset
-- integrate Reddit API
-- perform sentiment analysis
-- compare sentiment with ratings
+At this stage, sample output will be printed in the terminal.
