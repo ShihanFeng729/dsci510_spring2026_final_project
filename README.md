@@ -1,4 +1,4 @@
-# Sample Project Movie Rating Authenticity Analysis
+# Movie Rating Authenticity Analysis Across Platforms
 This project studies the relationship between movie review sentiment and movie rating reliability across platforms such as IMDb, TMDb, and Reddit.
 
 # Data sources
