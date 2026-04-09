@@ -1,4 +1,4 @@
-# Movie Rating Authenticity Analysis Across Platforms
+# Unveiling Rating Authenticity: A Cross-Platform Analysis of Review Sentiment on IMDb, TMDb, and Reddit.
 This project studies the relationship between movie review sentiment and movie rating reliability across platforms such as IMDb, TMDb, and Reddit.
 
 # Data sources
