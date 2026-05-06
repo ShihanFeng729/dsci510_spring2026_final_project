@@ -6,3 +6,4 @@ results/
 .idea/
 .DS_Store
 kaggle.json
+.venv/
